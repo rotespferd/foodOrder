@@ -14,7 +14,7 @@ class OrderItem < ActiveRecord::Base
     else
       product.price
     end
-  end
+    end
 
   def total_price
     unit_price * quantity
@@ -25,13 +25,13 @@ class OrderItem < ActiveRecord::Base
     if product.nil?
       errors.add(:product, "is not valid or is not active.")
     end
-  end
+    end
 
   def order_present
     if order.nil?
       errors.add(:order, "is not a valid order.")
     end
-  end
+    end
 
   def finalize
     self[:unit_price] = unit_price
