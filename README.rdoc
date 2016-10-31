@@ -5,3 +5,5 @@ This application handles the ordering of food in larger groups. Each group membe
 
 === Installation
 Clone the repository via "git clone https://github.com/thaasch/foodOrder.git".
+
+Install the dependencies with "bundler install".
